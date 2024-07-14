@@ -38,10 +38,9 @@ where total_sales<cogs
 group by manufacturer
 order by total_loss desc;
 ---Bài tập 9
-select teacher_id,
-count(distinct subject_id) as cnt
-from Teacher
-group by teacher_id
+select * from cinema
+where id%2!=0 and description!="boring"
+order by rating desc;
 ---Bài tập 10
 select teacher_id, count(distinct subject_id) as cnt
 from Teacher
